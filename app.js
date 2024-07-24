@@ -6,7 +6,7 @@ const userRoute=require('./api/routes/user');
 const mongoose=require('mongoose');
 const bodyParser=require('body-parser');
 
-mongoose.connect('mongodb+srv://tobi:hello1990@cluster0.kcsiwae.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
+mongoose.connect('mongodb+srv://<username>:<password>@cluster0.kcsiwae.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
 mongoose.connection.on('error',err=>{
     console.log('connect fail');
 })
